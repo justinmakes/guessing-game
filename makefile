@@ -1,5 +1,5 @@
 README.md: guessinggame.sh
-	echo "#guessinggame.sh" > README.md
+	echo "# guessinggame.sh" > README.md
 	echo "" >> README.md
 	echo "make was run on $$(date -u)" >> README.md
 	echo "" >> README.md
