@@ -1,8 +1,7 @@
 README.md: guessinggame.sh
-	echo "make was run at:" > README.md
-	date >> README.md
-	echo "lines of code in guessinggame.sh:" >> README.md
-	wc -l guessinggame.sh >> README.md
+	echo "#guessinggame.sh" > README.md
+	echo "make was run on $$(date -u)" >> README.md
+	echo "There are $$(<guessinggame.sh wc -l) lines of code in guessinggame.sh:" >> README.md
 
 clean:
 	rm -f README.md
